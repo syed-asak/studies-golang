@@ -10,7 +10,7 @@ func main() {
 	str1 := "The quick red fox"
 	str2 := "jumped over"
 	str3 := "the lazy brown dog."
-	aNumber := "42"
+	aNumber := 42
 
 	fmt.Println(str1, str2, str3)
 	stringlength, err := 0, errors.New("simulated print error")
@@ -26,5 +26,5 @@ func main() {
 
 	fmt.Printf("Value of number: %v\n", aNumber) //print the value of the aNumber
 	fmt.Printf("Data type: %T\n", aNumber)       //print the datatype of the variable aNumber
-
+        fmt.Printf("Data type: %T\n", str3)
 }
