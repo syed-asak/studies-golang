@@ -14,8 +14,10 @@ func main() {
 
 	fmt.Println(str1, str2, str3)
 	stringlength, err := 0, errors.New("simulated print error")
-	// Simulate error	stringlength, err := fmt.Println("The value is", aNumber) // here generally stringlength has the 
-	// of the string and any error goes to err, here we commented the line to run else part.
+	// Simulate error for else to get executed.	
+	// stringlength, err := fmt.Println("The value is", aNumber) 
+	// here generally stringlength has the of the string and any error goes to err, 
+	// here we commented the line to run else part.
 	if err == nil {
 		fmt.Println("String length:", stringlength)
 	} else {
