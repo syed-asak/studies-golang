@@ -1,26 +1,14 @@
-WHY GO PROGRAMMING?
+🎯 Objective
 
-Most programming languages support multithreading, which allows programs to perform multiple tasks concurrently. However, building reliable multithreaded applications can be challenging due to issues like:
+The Go programming language, commonly referred to as Golang, was created by Robert Griesemer, Rob Pike, and
+Ken Thompson at Google.
 
-    Race conditions – when multiple threads access shared data without proper synchronization.
+It is an open-source, general-purpose programming language designed for high-performance networking and 
+multiprocessing.
 
-    Deadlocks – when threads get stuck waiting on each other’s resources.
+Originally, the Go compiler was implemented in C, but it is now self-hosted—written in Go itself.
 
-Java Threading Limitation
-
-For example, in Java, creating a new thread consumes approximately 1 MB of heap memory. So, creating thousands of threads can quickly exhaust the system memory, potentially leading to an OutOfMemoryError.
-Go's Solution: Goroutines
-
-Go (Golang) addresses this problem with goroutines:
-
-    A goroutine is a lightweight thread managed by the Go runtime.
-
-    Each goroutine starts with just ~2 KB of memory (instead of 1 MB like Java threads).
-
-    They grow in memory usage as needed, which makes them highly scalable.
-
-    You can run millions of goroutines concurrently without running out of memory.
-
-    Goroutines are not tied 1:1 to OS threads – they are scheduled onto available threads by the Go runtime, which improves efficiency and startup time.
+This repository aims to share some basic concepts of Go to help you understand and kickstart your 
+Go programming journey.
 
 
