@@ -1,9 +1,12 @@
-## Objective
+🎯 Objective
 
-The GO Programming language was conceived by Robert Griesemer, Rob Pike abd Ken Thompson at Google.
-Its an open-source, general-purpose programming language that supports high-performance networking and 
+The Go programming language, commonly referred to as Golang, was created by Robert Griesemer, Rob Pike, and
+Ken Thompson at Google.
+
+It is an open-source, general-purpose programming language designed for high-performance networking and 
 multiprocessing.
 
-The Go compiler was initially written in C but it is now written in Go itself.
+Originally, the Go compiler was implemented in C, but it is now self-hosted—written in Go itself.
 
-This repo shares some basic concept of go and help to understand, kickstart go programming.
+This repository aims to share some basic concepts of Go to help you understand and kickstart your 
+Go programming journey.
