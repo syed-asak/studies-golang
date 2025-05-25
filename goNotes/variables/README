@@ -1,1 +1,35 @@
+Variable Declaration
+
+Variables declared without an explicit initial value are assigned the default zero value for numeric types, 
+false for boolean types and " " (the empty string) for string type.
+
+1. In Go, the type of the variable is specified after the variable name.
+2. If you want to put two (or more) statements on one line, they must be separated with a semicolon(;).
+3. When declaring a variable, it is assigned the natural null value for the type.
+4. This means that here. after var i int, i has a value of 0.
+5. With var s string, s is assigned the zero string which is " ".
+
+When Go finds the := assignment syntax, it understands that a new variable needs to be declared with an initial
+vallues.
+But you cannot use this syntax to assign a value to pre-defined variable. The variable type is deduced from the value.
+For example a value of 20 indicates an int and a value of ture tells Go that the type should be Boolean.
+
+Typed constant and untyped constant.
+
+Go is called a statically typed programming language. ie it will not allow performing operations that mix numeric
+types. example e cannot add an int variable to int64 variable as shown below.
+
+var x int = 100
+var y int64 = 200
+var sum = x + y // it will give a compiler error.
+but
+var sum = x + int(y)   // this will work as we are making both x and y as int.
+
+Typed constant -> const x float64 = 9.75
+                  const x int = 10
+Untyped constant-> 20
+                   "Golang"
+                    false
+Multi Constant -> const x, y,z int = 10, 20, 30
+
 
