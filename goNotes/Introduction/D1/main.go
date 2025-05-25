@@ -1,16 +1,15 @@
-// difference betn "\n" and '\n'.
 package main
 
 import "fmt"
 
 func main() {
-// newline sequence is treated as a special value	
+	// "\n" is an escape sequence that creates a new line
 	x := "apple\norange"
+	fmt.Println("Using \\n as an escape sequence:")
 	fmt.Println(x)
 
-// newline sequence is treated as two raw characters
-
-	y:= 'apple\norange'
-	fmt.Print\n(y)
-
+	// `\n` is treated as raw characters, no escape
+	y := `apple\norange`
+	fmt.Println("\nUsing raw string (backticks):")
+	fmt.Println(y)
 }
