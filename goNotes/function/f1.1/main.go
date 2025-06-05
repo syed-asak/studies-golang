@@ -18,7 +18,7 @@ func main()  {
 
  /* function returns the sum of two numbers */
 
-   func sub(num1, num2 int) int
+   func sub(num1, num2 int) int {
    var result int
    result = num1 - num2
    return result
