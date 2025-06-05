@@ -10,7 +10,7 @@ func main()  {
 	var sub_value int
 
 	/* calling the function to get the sub of a values */
-	sub_value = sum(x,y)
+	sub_value = sub(x,y)
 
 	fmt.printf("Subtraction value is : %d\n", sub_value)
 
@@ -18,7 +18,7 @@ func main()  {
 
  /* function returns the sum of two numbers */
 
-   func sum(num1, num2 int) int
+   func sub(num1, num2 int) int
    var result int
    result = num1 - num2
    return result
