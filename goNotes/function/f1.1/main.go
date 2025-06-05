@@ -12,7 +12,7 @@ func main()  {
 	/* calling the function to get the sub of a values */
 	sub_value = sub(x,y)
 
-	fmt.printf("Subtraction value is : %d\n", sub_value)
+	fmt.Printf("Subtraction value is : %d\n", sub_value)
 
 }
 
