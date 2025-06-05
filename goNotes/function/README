@@ -1,0 +1,13 @@
+## Functions
+A function declaration consists of the keyword func, the name of the function, a parameter list (empty for main), 
+a result list (also empty here) and the body of the function.
+
+func function_name ( [parameter-list] ) [result-list] {
+    //body of the function
+}
+
+- Parameters: when invoking a function we pass a value to the parameters. A parameter is like a placeholder. They 
+  are optional.
+- Returns: A function can return a list of values, the return-types is the list of data types of the values that 
+  the function returns.
+  
