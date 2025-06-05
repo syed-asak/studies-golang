@@ -1,0 +1,17 @@
+package main
+import "fmt"
+
+func main() {
+	var x int = 456
+	var y int = 654
+    var mul_value int
+
+	mul_value = mul(x,y)
+    fmt.Printf("Multipled value is : %d\n", mul_value)
+}
+
+func mul(num1, num2 int) int {
+	var result int  
+	result = num1*num2
+	return result
+}
