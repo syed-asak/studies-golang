@@ -5,3 +5,6 @@
 ## Convert them to same types.
 
 <img width="816" alt="image" src="https://github.com/user-attachments/assets/eb759cd8-3212-47b4-b686-703e1c9847b0" />
+
+## Math package link
+pkg.go.dev/math
