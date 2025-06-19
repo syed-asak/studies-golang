@@ -28,3 +28,5 @@ func main() {
 	fmt.Printf("Data type: %T\n", aNumber)       //print the datatype of the variable aNumber
         fmt.Printf("Data type: %T\n", str3)
 }
+
+// more on fmt function https://pkg.go.dev/fmt#pkg-functions
