@@ -15,4 +15,7 @@ func main() {
 
 	total := float64(i1) + f2
 	fmt.Println("Result:", total)
+
+	product := float64(i1) * f2
+	fmt.Println("Product:", product)
 }
