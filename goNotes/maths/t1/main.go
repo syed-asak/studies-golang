@@ -22,6 +22,6 @@ func main() {
 	fmt.Printf(tomorrow.Format(time.ANSIC) + "\n") //tomorrow is one day latter than today
 
 	format := "Mon 2006-02-01"                 // this day is mnemonic and easy to remember.
-	fmt.Printf(tomorrow.Format(format) + "\n") //f
+	fmt.Printf(tomorrow.Format(format) + "\n") //formated value, printf outputs to a target while S printf returns a string to a variable.
 
 }
