@@ -8,3 +8,12 @@
 
 ## Math package link
 pkg.go.dev/math
+
+## Time package link
+pkg.go.dev/time#Time
+
+```bash
+type Time struct {
+	// contains filtered or unexported fields
+}
+```
