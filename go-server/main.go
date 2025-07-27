@@ -10,15 +10,14 @@ import (
 // It parses form data and displays the name and address fields.
 func formHandler(w http.ResponseWriter, r *http.Request) {
 	if err := r.ParseForm(); err != nil {
-		fmt.Fprintf(w, "ParseForm() error: %v", err)
+		fmt.Fprintf(w, "ParseForm() err: %v", err)
 		return
 	}
 
-	fmt.Fprintf(w, "Post request successful\n")
+	fmt.Fprintf(w, "Post request successful")
 
 	name := r.FormValue("name")
 	address := r.FormValue("address")
-
 	fmt.Fprintf(w, "Name = %s\n", name)
 	fmt.Fprintf(w, "Address = %s\n", address)
 }
@@ -31,12 +30,12 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if r.Method != http.MethodGet {
-		http.Error(w, "Method is not supported", http.StatusMethodNotAllowed)
+	if r.Method != "Get" {
+		http.Error(w, "Method is not supported", http.StatusNotFound)
 		return
 	}
 
-	fmt.Fprintf(w, "Hello!")
+	fmt.Fprintf(w, "hello!")
 }
 
 func main() {
@@ -52,7 +51,7 @@ func main() {
 	// Route for responding with a simple greeting at /hello.
 	http.HandleFunc("/hello", helloHandler)
 
-	fmt.Println("Starting server at port 8080")
+	fmt.Println("Starting server at port 8080\n")
 
 	// Start the server and log any error if it fails to start.
 	if err := http.ListenAndServe(":8080", nil); err != nil {
